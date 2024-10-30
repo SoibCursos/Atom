@@ -46,27 +46,69 @@
     .header {
       width: 900px;
       height: 300px;
+      border: 1px solid #fff;/*for debugging*/
       display: flex;
       justify-content: space-between;
+      /* align-items: stretch; for debugging */
+      align-items: center;
+    }
+    .social, .logo, .subscribe {
+      border: 1px solid #5995DA;
+    }
+    .photo-grid-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .photo-grid {
+      width: 900px;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .photo-grid-item {
+      border: 1px solid #fff;
+      width: 300px;
+      height: 300px;
     }
     </style>
 </head>
 <body>
     <div class="menu-container">
-        <div class='menu'>
-            <div class='date'>Aug 14, 2016</div>
-              <div class='links'>
-                <div class='signup'>Sign Up</div>
-                <div class='login'>Login</div>
+        <div class="menu">
+            <div class="date">Aug 14, 2016</div>
+              <div class="links">
+                <div class="signup">Sign Up</div>
+                <div class="login">Login</div>
               </div>
           </div>
     </div>
-    <div class='header-container'>
-      <div class='header'>
-        <div class='subscribe'>Subscribe &#9662;</div>
-        <div class='logo'><img src='./images/awesome-logo.svg'/></div>
-        <div class='social'><img src='./images/social-icons.svg'/></div>
+    <div class="header-container">
+      <div class="header">
+        <div class="subscribe">Subscribe &#9662;</div>
+        <div class="logo"><img src="./images/awesome-logo.svg"/></div>
+        <div class="social"><img src="./images/social-icons.svg"/></div>
       </div>
+    </div>
+    <div class="photo-grid-container">
+      <div class="photo-grid">
+        <div class="photo-grid-item first-item">
+          <img src="./images/one.svg"/>
+        </div>
+        <div class="photo-grid-item">
+          <img src="./images/two.svg"/>
+        </div>
+        <div class="photo-grid-item">
+          <img src="./images/three.svg"/>
+        </div>
+        <div class="photo-grid-item">
+          <img src="./images/four.svg"/>
+        </div>
+        <div class="photo-grid-item last-item">
+          <img src="./images/five.svg"/>
+        </div>
+      </div>
+      
     </div>
 </body>
 </html>
