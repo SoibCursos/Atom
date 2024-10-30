@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Atom</title>
+    <link rel='stylesheet' href='./css/styles.css'/>
+    <style>
+        * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;/*me invierte desde donde toma el        oigen de referencia, en vez de, hacerlo desde la esquina          superior izquierda al objeto lo hace desde el objeto a la     esquina superior izquierda*/
+    }
+    
+    .menu-container {
+      color: #fff;
+      background-color: #5995DA;  /* Blue */
+      padding: 20px 0;
+      /*...*/
+      display: flex;
+      justify-content: center;
+    }
+    
+    .menu {
+      border: 1px solid #fff;  /* For debugging */
+      width: 900px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .links {
+      /* border: 1px solid #fff;  For debugging */
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .login {
+      margin-left: 20px;
+    }
+    .header-container {
+      color: #5995DA;
+      background-color: #D6E9FE;
+      display: flex;
+      justify-content: center;
+    }
+
+    .header {
+      width: 900px;
+      height: 300px;
+      display: flex;
+      justify-content: space-between;
+    }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class='menu'>
+            <div class='date'>Aug 14, 2016</div>
+              <div class='links'>
+                <div class='signup'>Sign Up</div>
+                <div class='login'>Login</div>
+              </div>
+          </div>
+    </div>
+    <div class='header-container'>
+      <div class='header'>
+        <div class='subscribe'>Subscribe &#9662;</div>
+        <div class='logo'><img src='./images/awesome-logo.svg'/></div>
+        <div class='social'><img src='./images/social-icons.svg'/></div>
+      </div>
+    </div>
+</body>
+</html>
